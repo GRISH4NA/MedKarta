@@ -32,7 +32,7 @@ public class MainActivityList extends AppCompatActivity {
 
 
         });
-                listView = findViewById(R.id.List);
+        listView = findViewById(R.id.List);
 
         // Создание адаптера и привязка его к ListView
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
@@ -42,9 +42,17 @@ public class MainActivityList extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // Переход на DetailActivity с передачей выбранного элемента
-                Intent intent = new Intent(MainActivityList.this, FirstActivity.class);
-                intent.putExtra("selected_item", items[position]);
+                Intent intent;
+                if (position == 0) {
+                    // Переход на FirstActivity при нажатии на первый элемент
+                    intent = new Intent(MainActivityList.this, FirstActivity.class);
+                } else if (position == 1) {
+                    // Переход на SecondActivity при нажатии на второй элемент
+                    intent = new Intent(MainActivityList.this, SecondActivity.class);
+                } else {
+                    // Для остальных элементов можно добавить другую логику или оставить пустым
+                    return;
+                }
                 startActivity(intent);
             }
         });
