@@ -43,12 +43,12 @@ public class SecondActivity extends AppCompatActivity {
         patientList.add(new Patient("ИНН", "8693789045"));
         patientList.add(new Patient("Полис", "8624896893589987"));
         patientList.add(new Patient("Дата рождения", "2000-09-19"));
-        patientList.add(new Patient("Домашний адрес", "Проездная 24 кв. 48"));
-        patientList.add(new Patient("На учете", "С 05.11.2024"));
-        patientList.add(new Patient("Диагноз", "Все плохо"));
-        patientList.add(new Patient("История болезней", "Пневмония"));
-        patientList.add(new Patient("Лечащий врач", "Голованов Ф.А."));
-        patientList.add(new Patient("Назначенное лечения", "Пить микстуру"));
+        patientList.add(new Patient("Домашний адрес", "Крышная 6А кв. 37"));
+        patientList.add(new Patient("На учете", "С 07.11.2024"));
+        patientList.add(new Patient("Диагноз", "Кариес"));
+        patientList.add(new Patient("История болезней", "Гастрит, гайморит"));
+        patientList.add(new Patient("Лечащий врач", "Лейнинг Э.Е."));
+        patientList.add(new Patient("Назначенное лечения", "Полоскайте рот"));
         patientList.add(new Patient("Был на приеме", "15.11.2024"));
 
         patientListAdapter = new PatientListAdapter(this, patientList);
