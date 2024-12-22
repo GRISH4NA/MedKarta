@@ -49,7 +49,7 @@ public class SecondActivity extends AppCompatActivity {
         patientList.add(new Patient("История болезней", "Гастрит, гайморит"));
         patientList.add(new Patient("Лечащий врач", "Лейнинг Э.Е."));
         patientList.add(new Patient("Назначенное лечения", "Полоскайте рот"));
-        patientList.add(new Patient("Был на приеме", "16.11.2024"));
+        patientList.add(new Patient("Был на приеме", "13.11.2024"));
 
         patientListAdapter = new PatientListAdapter(this, patientList);
         listView.setAdapter(patientListAdapter);
