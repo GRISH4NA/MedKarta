@@ -48,8 +48,7 @@ public class FirstActivity extends AppCompatActivity {
         patientList.add(new Patient("Диагноз", "Все плохо"));
         patientList.add(new Patient("История болезней", "Пневмония"));
         patientList.add(new Patient("Лечащий врач", "Голованов Ф.А."));
-        patientList.add(new Patient("Назначенное лечения", "Пить микстуру"));
-        patientList.add(new Patient("Был на приеме", "14.11.2024"));
+        patientList.add(new Patient("Назначенное лечения", "Пить микстуру"));patientList.add(new Patient("Был на приеме", "12.11.2024"));
         
         patientListAdapter = new PatientListAdapter(this, patientList);
         listView.setAdapter(patientListAdapter);
